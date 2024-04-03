@@ -1,0 +1,82 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  color: var(--Very-Dark-Blue-Text);
+  margin-bottom: 5px;
+}
+
+.header p,
+.header span {
+  color: var(--Dark-Grayish-Blue-Text);
+  font-weight: 600;
+}
+
+.header div:last-of-type {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: var(--white);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.toggle i {
+  position: absolute;
+  transition: all 0.4s;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--White-BG);
+  transform: scale(0.7);
+}
+.toggle.dark {
+  background: var(--dark);
+}
+.toggle.dark i {
+  right: 50%;
+  background-color: var(--VeryDarkBlueBG);
+}
+.toggle:hover {
+  background: var(--Twitter);
+}
+.toggle.toggle.dark:hover {
+  background: var(--dark);
+}
+
+.dark h1,
+.dark div span,
+p {
+  color: var(--WhiteText);
+}
+
+@media only screen and (width < 600px) {
+  .header {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  .header div:first-of-type {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--white);
+    margin-bottom: 20px;
+  }
+  .header div:nth-child(2) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}

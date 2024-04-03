@@ -1,0 +1,91 @@
+.card {
+  display: flex;
+  border-radius: 10px;
+  padding: 20px 0;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Very-Pale-Blue-Top-BG-Pattern);
+  transition: background-color 0.3s, border-color 0.3s;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px,
+    rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+}
+.card.dark {
+  background-color: var(--DarkDesaturatedBlue-Card-BG);
+}
+
+div.card:not(:last-child) {
+  border-top: 5px solid transparent;
+  border-image: var(--dark);
+  border-image-slice: 1;
+}
+
+div.card:nth-child(3):hover {
+  border-top: 5px solid transparent;
+  border-image: var(--Instagram);
+  border-image-slice: 1;
+}
+
+div.card:last-child {
+  border-top: 5px solid var(--YouTube);
+}
+
+.card:hover {
+  background-color: var(--Light-Grayish-Blue-Card-BG);
+  cursor: pointer;
+}
+
+.card.dark:hover {
+  background-color: var(--VeryDarkBlueTopBGPattern);
+}
+
+.top,
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.top span {
+  font-size: var(--primary-size);
+  color: var(--Very-Dark-Blue-Text);
+  font-weight: 400;
+}
+.card.dark .top span,
+.card.dark .middle p:last-child {
+  color: var(--DesaturatedBlueText);
+}
+
+.middle p:first-child {
+  color: var(--Very-Dark-Blue-Text);
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.card.dark .middle p:first-child {
+  color: var(--WhiteText);
+}
+
+.middle p:last-child {
+  color: var(--Dark-Grayish-Blue-Text);
+  letter-spacing: 5px;
+  font-size: var(--primary-size);
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card:not(:last-child) .bottom span {
+  color: var(--Lime-Green);
+  font-weight: 600;
+}
+
+.card:last-child {
+  color: var(--Bright-Red);
+  font-weight: 600;
+}

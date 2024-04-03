@@ -1,0 +1,67 @@
+.card {
+  background-color: var(--Very-Pale-Blue-Top-BG-Pattern);
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  transition: background-color 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px,
+    rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+}
+
+.card.dark {
+  background-color: var(--DarkDesaturatedBlue-Card-BG);
+}
+.card.dark:hover {
+  background-color: var(--VeryDarkBlueTopBGPattern);
+}
+.card:nth-child(2) .bottom span:last-child {
+  color: var(--YouTube);
+}
+
+.card:last-child .bottom span:last-child,
+.card:nth-child(7) .bottom span:last-child {
+  color: var(--YouTube);
+}
+
+.card:hover {
+  background-color: var(--Light-Grayish-Blue-Card-BG);
+  cursor: pointer;
+}
+.top,
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom span:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+}
+
+.bottom span:last-child img {
+  padding-right: 5px;
+}
+.bottom span:last-child span {
+  color: var(--Lime-Green);
+  font-weight: 600;
+}
+.top span {
+  color: var(--Dark-Grayish-Blue-Text);
+  font-weight: 600;
+}
+
+.bottom span:first-child {
+  color: var(--Very-Dark-Blue-Text);
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.card.dark .bottom span:first-child {
+  color: var(--WhiteText);
+}
