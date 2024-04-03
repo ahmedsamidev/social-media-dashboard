@@ -18,7 +18,7 @@ A Social Media dashbord desgin from Front End Mentor
 
 ## Demo
 
-Here is a working live demo : https://iharsh234.github.io/WebApp/
+Here is a working live demo : [Social Dashboard](https://social-media-dashboard-three-brown.vercel.app/)
 
 <!-- ## Site
 
